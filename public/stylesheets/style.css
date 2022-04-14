@@ -1,0 +1,47 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+header {
+  /* espacio logo */
+  background-color: #17ad44;
+  padding: 1em 0;
+}
+
+header h1 {
+  /* texto encabezado */
+  color: white;
+  font-size: 3em;
+  font-style: italic;
+  font-weight: 100;
+  display: inline-block;
+  position:relative;
+  bottom: 50px;
+}
+
+.holder {
+    text-align: center;
+
+  }
+
+
+footer {
+  background-color: rgb(12, 11, 11);
+  clear: both;
+  color: rgb(185, 173, 173);
+  padding: 1em 0;
+  margin-top: 2em;
+  text-align: center;
+}
+
+
+.homeimg {
+  margin-bottom: 1.5em;
+  size: small;
+}
+
+
+
+/* fin zona home */
+
