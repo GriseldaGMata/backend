@@ -1,0 +1,6 @@
+header h1{
+    position: static;
+}
+.errormsg{
+    color: red;
+}
