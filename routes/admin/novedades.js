@@ -46,15 +46,13 @@ router.get('/eliminar/:id', async(req, res, next)=>{
 });
 
 router.get('/modificar/:id', async(req, res, next)=>{
-        let id =req.params.id;
-        let novedades=await novedadesModel.getNovedadById(id);
+        var id =req.params.id;
+        var novedad=await novedadesModel.getNovedadById(id);
         res.render('admin/modificar', {
                 layout: 'admin/layout',
-                novedades
+                novedad
         });
 });
-
-
 router.post('/modificar', async (req, res, next) => {
         try {
           let obj={
@@ -68,8 +66,7 @@ router.post('/modificar', async (req, res, next) => {
               console.log(error)
               res.render('admin/modificar', {
               layout: 'admin/layout',
-              error: true, 
-              message: 'No se modifico la novedad'
+              error: true,message: 'No se modifico la novedad, revise los datos.'
               })
         }
 })

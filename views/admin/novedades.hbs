@@ -21,7 +21,7 @@
         <a class="btn btn-success" href="/admin/novedades/agregar"><i
             class="fa fa-plus"
             aria-hidden="true"
-          ></i>Nuevo</a>
+          ></i>Crear novedad</a>
       </div>
     </div>
     {{! // fin fila2 }}
@@ -44,18 +44,10 @@
                 <th scope="row">{{id}}</th>
                 <td>{{titulo}}</td>
                 <td class="text-end">
-                  <a
-                    href="/admin/novedades/eliminar/{{id}}"
-                    title="Editar"
-                    class="btn btn-sm btn-secordary"
-                  >
-                    <i class="fa fa-pencil"></i></a>
-                  <a
-                    href="/admin/novedades/eliminar/{{id}}"
-                    title="Eliminar"
-                    class="btn btn-sm btn-secordary"
-                  >
-                    <i class="fa fa-trash"></i></a>
+                  <a href="/admin/novedades/modificar/{{id}}"title="Editar"class="btn btn-sm btn-secordary">
+                  <i class="fa fa-pencil"></i></a>
+                  <a href="/admin/novedades/eliminar/{{id}}"title="Eliminar" class="btn btn-sm btn-secordary">
+                  <i class="fa fa-trash"></i></a>
                 </td>
               </tr>
             {{/each}}
