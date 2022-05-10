@@ -5,14 +5,14 @@ body {
 }
 header {
   /* espacio logo */
-  background-color: #17ad44;
+  background-color: #5b800a;
   padding: 1em 0;
 }
 
 header h1 {
   /* texto encabezado */
   color: white;
-  font-size: 3em;
+  font-size: 2em;
   font-style: italic;
   font-weight: 100;
   display: inline-block;
@@ -20,11 +20,17 @@ header h1 {
   bottom: 50px;
 }
 
+header h3{
+  color: white;
+  font-size: 1,5em;
+  font-style: italic;
+  font-weight: 100;
+   
+}
+
 .holder {
     text-align: center;
-
   }
-
 
 footer {
   background-color: rgb(12, 11, 11);
@@ -41,6 +47,14 @@ footer {
   size: small;
 }
 
+.mensaje{
+  color: red;
+  font-style: italic;
+}
+botonlogin{
+  background-color: #5b800a;
+  color: #5b800a;
+}
 
 
 /* fin zona home */

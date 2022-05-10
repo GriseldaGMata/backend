@@ -6,9 +6,10 @@
       <div class="col">
         <p class="text-end">Hola
           {{usuario}}!
-          <a href="/admin/login/logout" class="btn btn-sm btn-danger">Cerrar
-            sesion
-            <i class="fa fa-sign-out"></i></a></p>
+          <a href="/admin/login/logout" 
+          class="btn btn-outline-primary">Cerrar sesion
+          <i class="fa fa-sign-out"></i></a>
+        </p>
       </div>
     </div>
     {{! // fin fila1 }}
@@ -18,15 +19,14 @@
         <h3>Listado de novedades:</h3>
       </div>
       <div class="col-5 text-end">
-        <a class="btn btn-success" href="/admin/novedades/agregar"><i
-            class="fa fa-plus"
-            aria-hidden="true"
-          ></i>Crear novedad</a>
+        <a class="btn btn-outline-success" href="/admin/novedades/agregar"><i
+            class="fa fa-plus" aria-hidden="true"></i>Crear novedad</a>
       </div>
     </div>
     {{! // fin fila2 }}
 
-    {{! // fila3 }}
+
+    {{!-- grilla de listado de novedades   --}}
 
     <div class="row">
       <div class="col">
@@ -35,6 +35,8 @@
             <tr>
               <th scope="col">#</th>
               <th scope="col">Titulo</th>
+              <th scope="col">Subtitulo</th>
+              <th scope="col">Cuerpo</th>
               <th scope="col">Imagen</th>
               <th scope="col" class="text-end">Acciones</th>
             </tr>
@@ -44,11 +46,13 @@
               <tr>
                 <th scope="row">{{id}}</th>
                 <td>{{titulo}}</td>
+                <td>{{subtitulo}}</td>
+                <td>{{cuerpo}}</td>
                 <td>{{{imagen}}}</td>
                   <td class="text-end">
-                  <a href="/admin/novedades/modificar/{{id}}"title="Editar"class="btn btn-sm btn-secordary">
+                  <a href="/admin/novedades/modificar/{{id}}"title="Editar"class="btn btn-outline-warning">
                   <i class="fa fa-pencil"></i></a>
-                  <a href="/admin/novedades/eliminar/{{id}}"title="Eliminar" class="btn btn-sm btn-secordary">
+                  <a href="/admin/novedades/eliminar/{{id}}"title="Eliminar" class="btn btn-outline-danger">
                   <i class="fa fa-trash"></i></a>
                 </td>
               </tr>
@@ -57,43 +61,4 @@
         </table>
       </div>
     </div>
-    {{! // fin fila3 }}
-
-    {{! //fila4 }}
-
-    {{!-- <div class="row">
-      <div class="col-6 offset-3">
-        <h4>Modificar la novedad</h4>
-        <form method="post" action="/admin/novedades/modificar">
-          <input type="hidden" value="{{novedad.id}}" name="id" />
-          <div class="form-group">
-            <input
-              type="text"
-              placeholder="Titulo"
-              value="{{novedad.titulo}}"
-              class="form-control"
-              name="titulo"/>
-          </div>
-          <div class="form-group">
-            <textarea
-              placeholder="Subtitulo"
-              value="{{novedad.subtitulo}}"
-              class="form-control"
-              name="subtitulo">
-            </textarea>
-          </div>
-          <div class="form-group">
-            <textarea
-              placeholder="Cuerpo"
-              value="{{novedad.cuerpo}}"
-              class="form-control"
-              name="cuerpo">
-            </textarea>
-          </div> 
-          <button type="submit" class="btn btn-primary">Modificar</button>
-        </form>
-      </div>
-    </div> --}}
-    {{! // fin fila4 }}
-  {{!-- </div> --}}
-</html>
+   </html>
