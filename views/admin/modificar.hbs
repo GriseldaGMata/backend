@@ -1,12 +1,15 @@
 <div class="container" style="margin: 50px auto;">
   <div class="row">
+    
     <div class="col-6 offset-3">
       <h4>Modificar la novedad</h4>
       <form action="/admin/novedades/modificar" method="post" enctype="multipart/form-data"/>
       <input type="hidden" value="{{novedad.id}}" name="id">
+      
       <div class="form-group">
           <input type="text" placeholder="Titulo" value="{{novedad.titulo}}" class="form-control" name="titulo">
       </div>
+
       {{!-- para el manejo de imagenes --}}
         <div class="form-group">
           <p>
@@ -18,6 +21,7 @@
           </p>
         </div>
  {{!-- cierro manejo de imagenes --}}
+
       <div class="form-group">
           <textarea placeholder="Subtitulo" class="form-control" name="subtitulo" >{{novedad.subtitulo}}</textarea>
       </div>
@@ -27,6 +31,7 @@
       <button type="submit" class="btn btn-primary">Modificar</button>
       </form>
     </div>
+
   </div>
 </div>
 {{#if error}}
