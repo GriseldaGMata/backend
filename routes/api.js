@@ -51,7 +51,7 @@ router.post('/contacto', async(req, res) =>{
 
     res.status(201).json({
         error:false,
-        message:'El mensaje ha sido enviado'
+        message:'El mensaje ha sido enviado.'
     });
 });
 
