@@ -1,6 +1,22 @@
 header h1{
     position: static;
+    font-family: "Raleway",sans-serif;
 }
 .errormsg{
     color: red;
+    font-family: "Raleway",sans-serif;
+    font-weight: 2em;
+}
+h3{
+    color: rgb(18,4,50);
+    font-family: "Raleway",sans-serif;
+}
+h2 {
+    color: rgb(18,4,50);
+    font-family: "Raleway",sans-serif;
+}
+
+p a tr {
+    color: rgb(18,4,50);
+    font-family: "Raleway",sans-serif;
 }

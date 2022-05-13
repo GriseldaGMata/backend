@@ -40,6 +40,7 @@ main {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+  font-family: "Raleway",sans-serif;
 }
 
 /* Grouping content
@@ -62,8 +63,9 @@ hr {
  */
 
 pre {
-  font-family: monospace, monospace; /* 1 */
+  /* font-family: monospace, monospace;  */
   font-size: 1em; /* 2 */
+  font-family: "Raleway",sans-serif;
 }
 
 /* Text-level semantics
@@ -86,6 +88,7 @@ abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
   text-decoration: underline dotted; /* 2 */
+  font-family: "Raleway",sans-serif;
 }
 
 /**
@@ -95,6 +98,7 @@ abbr[title] {
 b,
 strong {
   font-weight: bolder;
+  font-family: "Raleway",sans-serif;
 }
 
 /**
@@ -105,8 +109,9 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace; /* 1 */
+  /* font-family: monospace, monospace;  */
   font-size: 1em; /* 2 */
+  font-family: "Raleway",sans-serif;
 }
 
 /**
@@ -162,7 +167,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; /* 1 */
+  font-family: "Raleway",sans-serif; /* 1 */
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
